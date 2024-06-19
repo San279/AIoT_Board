@@ -56,7 +56,6 @@
 - 320 X 240  120 ผล Ai 3 fps<br /><br />
 ![alt text](/object-detect-FOMO-TFT-Esp32/Images_for_readme/320_240.PNG)
 <br /><br /><br />
-- เราควรเลือกมิติของโมเดลเรา<br /><br />
 
 ## เครดิต 
 ต้องขอขอบคุณ [WIRELESS SOLUTION ASIA CO.,LTD](https://wirelesssolution.asia/) สำหรับการสนับสนุนโปรเจ็คนี้ และ [Bodmer / TFT_eSPI](https://github.com/Bodmer/TFT_eSPI/blob/master/README.md)
