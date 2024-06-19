@@ -15,10 +15,10 @@
   ![alt text](/Images_for_readme/create_new_project.PNG)
 <br/>
 ## Data collection
-  <strong> 1. Collecting data from Esp32 can be a tediuos. Luckily, you can download and run the scripted that I've created [camera-webserver-for-esp32S3](https://github.com/San279/camera-webserver-for-esp32S3) or use Webcam interface in Edge impulse. </strong>
+  <strong> 1. Collecting data from Esp32 can be a tediuos. Luckily, you can download and run the scripted that I've created [camera-webserver-for-esp32S3](https://github.com/San279/AIoT_Board/tree/main/camera-tft-esp32) or use Webcam interface in Edge impulse. </strong>
      <br/>
   - The best results of this network is obtained atleast 70 images per class and 10% of background(other) images. To put in perspective, training a model to count 2 fingers requires 70 images of one, another 70 images of two, and atleast 20-30 images of other fingers or object look alike.
-  - Images should has equal width and height otherwise it's width will be crop off when uploading to Edge Impulse. Here is snapshot of [webserver](https://github.com/San279/camera-webserver-for-esp32S3) used for data collections. Each images is 96 X 96 in dimension. 
+  - Images should has equal width and height otherwise it's width will be crop off when uploading to Edge Impulse. Here is snapshot of [webserver](https://github.com/San279/AIoT_Board/tree/main/camera-tft-esp32) used for data collections. Each images is 96 X 96 in dimension. 
 <br/> <br/>   
   ![alt text](/Images_for_readme/webserver.PNG)
 <br/> <br/> <br/>
@@ -105,7 +105,7 @@ Click on add learning block and select the first option, then save the impulse.
    <br/> <br/><br/>
   <strong> 3. Click on Build to start downloading the library, and you're done. </strong>
   <br/> <br/>
-  I've created two libraries for testing the model in real time, please visit [FOMO-object-detect-stream-Esp32](https://github.com/San279/FOMO-object-detect-stream-Esp32) for webserver platform or [FOMO-object-detect-TFT](https://github.com/San279/FOMO-object-detect-stream-Esp32) for display on TFT screens.
+  I've created two libraries for testing the model in real time, please visit [FOMO-object-detect-stream-Esp32](https://github.com/San279/AIoT_Board/tree/main/object-detect-FOMO-stream-Esp32) for webserver platform or [FOMO-object-detect-TFT](https://github.com/San279/AIoT_Board/tree/main/object-detect-FOMO-stream-Esp32) for display on TFT screens.
 
 ## Credit
 Thanks to [WIRELESS SOLUTION ASIA CO.,LTD](https://wirelesssolution.asia/) for providing AIOT board to support this project. Also thanks to [Bodmer / TFT_eSPI](https://github.com/Bodmer/TFT_eSPI/blob/master/README.md) for the TFT libraries. Scripted used for Esp32 FOMO object detection inferencing were provided by [Edge Impulse](https://edge-impulse.gitbook.io/docs/edge-impulse-studio/learning-blocks/object-detection/fomo-object-detection-for-constrained-devices). 
