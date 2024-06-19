@@ -4,6 +4,9 @@
  <br/>
  โปรเจ็คนี้ถูกออกแบบมาให้ใช้กับ AI ตรวจจับวัตถุ[FOMO](https://docs.edgeimpulse.com/docs/edge-impulse-studio/learning-blocks/object-detection/fomo-object-detection-for-constrained-devices) ในส่วนของการรวบรวมรูปภาพจาก AIoT บอร์ด ขึ้นเว็ปเซอร์เวอร์ เพื่อนำไปใช้ใน [Edge Impulse](https://edgeimpulse.com/)
 <br/>
+<br/>
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/done.PNG)
+<br/>
 ## สิงที่ต้องมี
  - [AIoT](https://wirelesssolution.asia/) บอร์ด Esp32-S3 หรือ Esp32 ที่มี PSRAM
  - กล้อง OV 2640
@@ -16,11 +19,11 @@
 ## วิธีรันโปรเจ็ค
 <strong> 1. ดาวน์โหลดไลบราลี่เป็น zip และแตกไฟล์ในแฟ้ม Arduino. </strong>
 <br /><br />
-![alt text](/Images_for_readme/folder_directory.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/folder_directory.PNG)
 <br /><br /><br /><br />
 <strong> 2. เปิดแฟ้มที่พึ่งแยก และเปิดไฟล์ camera-webserver-for-esp32S3.ino เปลี่ยนชื่อกับรหัส WIFI ในบรรทัด 24 กับ 25 ให้ใช้อันเดียวกับที่คอมพิวเตอร์เรา  </strong>
 <br /><br />
-![alt text](/Images_for_readme/ssidPassword.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/ssidPassword.PNG)
 <br /><br /><br /><br />
 <strong> 3. กดไปที่ tools ตรงตัวเลือกด้านบนและเปลี่ยน Board เป็น "ESP32S3 Dev Module" และเปลี่ยน PSRAM เป็น "OPI PSRAM"  </strong>
 <br /><br />
@@ -28,15 +31,15 @@
 <br /><br /><br /><br />
 <strong> 4. อัพโหลดโค้ดขึ้นบน ESP32-S3 เสร็จแล้วให้คัดลอก ip address  </strong>
 <br /><br />
-![alt text](/Images_for_readme/ip_IDE.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/ip_IDE.PNG)
 <br /><br /><br /><br />
 <strong> 5. เปิด index.html และนำ ip address ที่คัดลอกมาวางใว้ในกล่องและกด ok </strong>
 <br /><br />
-![alt text](/Images_for_readme/ip_prompt.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/ip_prompt.PNG)
 <br /><br /><br /><br />
 <strong> 6. เสร็จสิ้น  </strong>
 <br/> <br/>
-![alt text](/Images_for_readme/done.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/done.PNG)
 <br /><br /><br /><br />
 ## ฟีเจอร์ของเว็ปเซอร์
 - เมื่อกดปุ่มรูปกล้องจะเริ่มการบันทึกรูปภาพ<br />
