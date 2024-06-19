@@ -1,5 +1,5 @@
 # object-detect-FOMO-stream-Esp32
-[ฉบับไทย](https://github.com/San279/AIoT_Board/blob/main/Readme-th.md)
+[ฉบับไทย](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-stream-Esp32/Readme-th.md)
 <br/>
 <br/>
 This project was intended for streaming [FOMO object detection model](https://edge-impulse.gitbook.io/docs/edge-impulse-studio/learning-blocks/object-detection/fomo-object-detection-for-constrained-devices) by [Edge Impulse](https://edgeimpulse.com/) inference results from Esp32 to webserver. The Hardware that was used were provided by [Wireless Solution Asia](https://wirelesssolution.asia/). To use this script users must obtain a model from Edge Impulse </br> </br>
