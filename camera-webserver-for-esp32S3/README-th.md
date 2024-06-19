@@ -2,7 +2,7 @@
  [For English version](https://github.com/San279/AIoT_Board/blob/main/camera-webserver-for-esp32S3/README.md)
  <br/>
  <br/>
- โปรเจ็คนี้ถูกออกแบบมาให้ใช้กับ AI ตรวจจับวัตถุ[FOMO](https://docs.edgeimpulse.com/docs/edge-impulse-studio/learning-blocks/object-detection/fomo-object-detection-for-constrained-devices) ในส่วนของการรวบรวมรูปภาพจาก AIoT บอร์ด ขึ้นเว็ปเซอร์เวอร์ เพื่อนำไปใช้ใน [Edge Impulse](https://edgeimpulse.com/)
+ โปรเจ็คนี้ถูกออกแบบมาให้ใช้กับ AI ตรวจจับวัตถุ[FOMO](https://docs.edgeimpulse.com/docs/edge-impulse-studio/learning-blocks/object-detection/fomo-object-detection-for-constrained-devices) ในส่วนของการรวบรวมรูปภาพจาก AIoT บอร์ด เพื่อดาวโหลดลงบนคอมพิวเตอร์ของเราและนำไปใช้ใน [Edge Impulse](https://edgeimpulse.com/)
 <br/>
 <br/>
 ![alt text](/camera-webserver-for-esp32S3/Images_for_readme/done.PNG)
