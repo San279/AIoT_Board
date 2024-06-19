@@ -63,7 +63,7 @@ https://heyrick.eu/blog/index.php?diary=20210418&keitai=0](https://heyrick.eu/bl
 - Download button located on the top left will zip all captured images into a single file and download.<br />
 - Clear buttons located on the top right will delete all captured images.<br />
 - User can aslo delete each image individually.<br /><br />
-![alt_text](/Images_for_readme/gallery_img.PNG)
+![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/gallery_img.PNG)
 <br /> <br /><br /> <br />
 ## Credit
 Thanks to [WIRELESS SOLUTION ASIA CO.,LTD](https://wirelesssolution.asia/) for providing AIOT board to support this project. Also thanks to [RandomNerdTutorials]([RandomNerdTutorial](https://RandomNerdTutorials.com/esp32-cam-video-streaming-web-server-camera-home-assistant) for providing essential codes for streaming Esp32 camera to webserver.
