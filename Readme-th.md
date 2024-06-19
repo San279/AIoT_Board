@@ -1,6 +1,6 @@
 
 ## วิธีการฝึก FOMO AI ตรวจจับวัตถุโดยใช้ Edge Impulse
- [For English version](https://github.com/San279/train-FOMO-object-detect-esp32/blob/main/Readme.md)
+ [For English version](https://github.com/San279/AIoT_Board/blob/main/Readme.md)
  <br/>
  <br/>
   [FOMO](https://docs.edgeimpulse.com/docs/edge-impulse-studio/learning-blocks/object-detection/fomo-object-detection-for-constrained-devices) คือ AI ตรวจจับวัตถุที่เหมาะสำหรับไมโครคอนโทรลเลอร์มที่มีเสป็คที่จำกัด ในโปรเจ็คนี่เราจะทำการเทรน AI ให้นับสองนิ้ว โดยให้ข้อแนะนำต่างๆ ในการรวบรวมรูปภาพจากกล้อง การฝึก AI และการนำโมเดลไปรันบน Esp32-S3 ใน Arduino
@@ -16,7 +16,7 @@
   ![alt text](/Images_for_readme/create_new_project.PNG)
 <br/>
 ## การรวบรวมรูปภาพ
-  <strong> 1. การรวบรวมรูปภาพเพื่อฝึก AI ประเภทนี้ควรใช้กล้องจาก AIoT หรือ Esp32 โดยตรง โดยการใช้ไลบรารี่ [camera-webserver-for-esp32S3](https://github.com/San279/camera-webserver-for-esp32S3) เพื่อทำให้วิธีนี้นั้นง่ายขึ้น </strong>
+  <strong> 1. การรวบรวมรูปภาพเพื่อฝึก AI ประเภทนี้ควรใช้กล้องจาก AIoT หรือ Esp32 โดยตรง โดยการใช้ไลบรารี่ [camera-webserver-for-esp32S3](https://github.com/San279/AIoT_Board/blob/main/camera-webserver-for-esp32S3/README-th.md) เพื่อทำให้วิธีนี้นั้นง่ายขึ้น </strong>
      <br/>
   - เราควรกำหนดให้มีอย่างน้อย 70 รูปต่อวัตถุ(class) และอีก 10% เป็นรูปของพื้นหลังยกตัวอย่างเช่น การฝึกโมเดลให้นับนิ้วมือนั้นเราจะกำหนด 2 class คือหนึ่งนิ้วกับสองนิ้ว โดยนิ้วที่หนึ่งจะต้องมี 70 รูป ส่วนสองนิ้วจะต้องมีอีก 70 รูปภาพ และสุดท้ายควรมีภาพพื้นหลังหรือวัตถุอื่นๆ อีก สัก 30 รูปภาพ โดยถ้ารวมทั้งหมดเราจะมีประมาณ 170 รูปเพื่อใช้ในการฝึก AI
   - แต่ละรูปควรมีมิติ สูง X ยาวที่เหมือนกัน เนื่องจากทางเว็ปไซค์ของ Edge Impulse จะตัดส่วนความยาวให้เท่ากับความสูง ซึ่งอาจจะตัดส่วนสำคัญต่างๆ ของรูปนั้นออกไป สำหรับโปรเจ็คนี้เราใช้รูปมิติ 96 X 96
@@ -103,7 +103,9 @@
    <br/> <br/>
    ![alt text](/Images_for_readme/deployment2.PNG)
    <br/> <br/><br/>
-  <strong> 3. กด Build เพื่อโหลดโมเดล เป็น zip และไป import บน Arduino ในส่วนของการเทสโมเดลของเรา ผมมีสอง library ให้เลือก [FOMO-object-detect-stream-Esp32](https://github.com/San279/FOMO-object-detect-stream-Esp32) สำหรับการ Stream โมเดลเราขึ้นเว็ป หรือ [FOMO-object-detect-TFT](https://github.com/San279/FOMO-object-detect-stream-Esp32) สำหรับการแสดงผลของโมเดลเราบนจอ TFT </strong>
+  <strong> 3. กด Build เพื่อโหลดโมเดล เป็น zip และไป import บน Arduino เรามีอยู่สอง library ให้เลือกในการนำโมเดลเราไปใช้ในกล่อง AIoT  </strong>
+- [FOMO-object-detect-stream-Esp32](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-stream-Esp32/Readme-th.md) สำหรับการ Stream โมเดลเราขึ้นเว็ปเซอร์เวอร์ 
+- [FOMO-object-detect-TFT](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-TFT-Esp32/README-th.md) สำหรับการแสดงผลของโมเดลเราบนจอ TFT ในกล่อง AIoT โดยวิธีนี่จะ setup ง่ายกว่า
  <br/><br/><br/><br/><br/>
 ## Credit
 ต้องขอขอบคุณ [WIRELESS SOLUTION ASIA CO.,LTD](https://wirelesssolution.asia/) สำหรับ AIOT board และ support ในโปรเจ็คนี่ และ [Bodmer / TFT_eSPI](https://github.com/Bodmer/TFT_eSPI/blob/master/README.md) สำหรับ library จอ TFT และสกริปสำหรับการรัน FOMO จาก [Edge Impulse](https://edge-impulse.gitbook.io/docs/edge-impulse-studio/learning-blocks/object-detection/fomo-object-detection-for-constrained-devices) 
