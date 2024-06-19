@@ -24,7 +24,7 @@
 <br /><br /><br /><br />
 <strong> 3. กดไปที่ tools ตรงตัวเลือกด้านบนและเปลี่ยน Board เป็น "ESP32S3 Dev Module" และเปลี่ยน PSRAM เป็น "OPI PSRAM"  </strong>
 <br /><br />
-![alt text](camera-webserver-for-esp32S3/Images_for_readme/IDE_configure.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/IDE_configure.PNG)
 <br /><br /><br /><br />
 <strong> 4. อัพโหลดโค้ดขึ้นบน ESP32-S3 เสร็จแล้วให้คัดลอก ip address  </strong>
 <br /><br />
