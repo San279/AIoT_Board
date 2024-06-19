@@ -91,7 +91,7 @@ https://heyrick.eu/blog/index.php?diary=20210418&keitai=0](https://heyrick.eu/bl
 - Once capture button is clicked a timer will start to count number of seconds it took to capture all images.<br /> <br />
 ![alt_text](/object-detect-FOMO-stream-Esp32/Images_for_readme/console_seconds_th.PNG)
 <br /><br /> <br />
-- Dเมื่อกดปุ้ม Download ตรงซ้ายบนของ gallery จะรวมรูปภาพทั้งหมดใว้ในแฟ้มเดียวและดาวโหลดเป็น zip รูปที่ดาวโหลดจะไม่มีผลของ AI วาดใว้<br />
+- เมื่อกดปุ้ม Download ตรงซ้ายบนของ gallery จะรวมรูปภาพทั้งหมดใว้ในแฟ้มเดียวและดาวโหลดเป็น zip รูปที่ดาวโหลดจะไม่มีผลของ AI วาดใว้<br />
 - ปุ้ม Clear ตรงขวาบนจะลบรูปที่บันทึกใว้ทั้งหมด<br />
 - ยูเซอร์สามารถเลือกลบรูปที่ไม่ต้องการได้ <br /><br />
 ![alt_text](/object-detect-FOMO-stream-Esp32/Images_for_readme/gallery_img.PNG)
