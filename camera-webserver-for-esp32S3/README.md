@@ -20,45 +20,45 @@ This project is dedicated for collecting images from Esp32S3 to train [FOMO obje
 
 <strong> 1. Download the project and unzip it to your Arduino Directory. </strong>
 <br /><br />
-![alt text](/Images_for_readme/folder_directory.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/folder_directory.PNG)
 <br /><br /><br /><br />
 <strong> 2. Open camera-webserver-for-esp32S3 directory and launch camera-webserver-for-esp32S3.ino. Enter WIFI SSID and PASSWORD.  </strong>
 <br /><br />
-![alt text](/Images_for_readme/ssidPassword.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/ssidPassword.PNG)
 <br /><br /><br /><br />
 <strong> 3. Under tools change your Board to "ESP32S3 Dev Module" and PSRAM to "OPI PSRAM".  </strong>
 <br /><br />
-![alt text](/Images_for_readme/IDE_configure.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/IDE_configure.PNG)
 <br /><br /><br /><br />
 <strong> 4. Upload the code to your ESP32S3 and copy the IP address.  </strong>
 <br /><br />
-![alt text](/Images_for_readme/ip_IDE.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/ip_IDE.PNG)
 <br /><br /><br /><br />
 <strong> 5. Open index.html file, and paste the IP Address obtained from previously.  </strong>
 <br /><br />
-![alt text](/Images_for_readme/ip_prompt.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/ip_prompt.PNG)
 <br /><br /><br /><br />
 <strong> 6. Done!!!  </strong>
 <br/> <br/>
 <strong> - I've created repository to provide simple guide to training FOMO object detection model please visit [train-FOMO-object-detect-esp32](https://github.com/San279/train-FOMO-object-detect-esp32). </strong>
 <br/> <br/>
-![alt text](/Images_for_readme/done.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/done.PNG)
 <br /><br /><br /><br />
 ## Webserver features
 - User can switch languages on the top right corner of the web.<br />
 - Adjustable Camera Settings, to see more details about each setting please visit [
 https://heyrick.eu/blog/index.php?diary=20210418&keitai=0](https://heyrick.eu/blog/index.php?diary=20210418&keitai=0).<br />
 - User can hide the setting console by clicking on the icon above.<br /><br />
-![alt text](/Images_for_readme/setting.PNG)
+![alt text](/camera-webserver-for-esp32S3/Images_for_readme/setting.PNG)
 <br /><br /><br />
 - Adjustable Resolutions. <br />
 - Class labels will give each image an assigned name when downloaded, suitable for labeling images or organizing data collections directories.<br /><br />
-![alt_text](/Images_for_readme/resolution_class.PNG)
+![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/resolution_class.PNG)
 <br /><br /><br />
 - Capture button will start capturing images from stream and display it in the gallery below. <br />
 - The webserver can capture each images in an interval according to the input value. The interval cannot be less than 0.1.  <br />
 - Set Instances to limit the amount of images captured.<br /> <br />
-![alt_text](/Images_for_readme/capture_console.PNG)
+![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/capture_console.PNG)
 <br /><br /> <br />
 - Download button located on the top left will zip all captured images into a single file and download.<br />
 - Clear buttons located on the top right will delete all captured images.<br />
