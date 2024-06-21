@@ -15,7 +15,7 @@
  - camera-to-tft - มีไฟล์ Arduino เพื่อแสดงรูปภาพขึ้นบนหน้าจอ TFT.
  - User_Setup.h - เฮเด้อไฟล์สำหรับ c++ ต้องนำไฟล์นี้ไปแทนที่ไฟล์เดิมในแฟ้ม TFT_eSPI  <br/> <br/>
 ## วิธีรันโปรเจ็ค
-<strong> 1. เปิดไฟล์ camera-to-tft.ino ด้วย Arduino IDE และในช่องด้ายซ้านมือให้กดไปที่ library และค้นหา TFT_eSPI เพื่อดาวโหลดไฟล์</strong>
+<strong> 1. เปิดไฟล์ camera-to-tft.ino ด้วย Arduino IDE และในช่องด้ายซ้ายมือให้กดไปที่ library และค้นหา TFT_eSPI เพื่อดาวโหลดไฟล์</strong>
 <br /><br />
 ![alt_text](/camera-tft-esp32/images-for-readme/library_manager.PNG)
 <br /><br /><br /><br />
