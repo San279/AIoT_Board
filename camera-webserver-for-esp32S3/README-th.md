@@ -17,27 +17,23 @@
  3. index.js - javascript สำหรับฟังชั้นของการรับสรีมและส่วนหน้าบ้าน
  4. styles.css - css ทำให้เว็ปดูสวยงาม
 ## วิธีรันโปรเจ็ค
-<strong> 1. ดาวน์โหลดไลบราลี่เป็น zip และแตกไฟล์ในแฟ้ม Arduino. </strong>
-<br /><br />
-![alt text](/camera-webserver-for-esp32S3/Images_for_readme/folder_directory.PNG)
-<br /><br /><br /><br />
-<strong> 2. เปิดแฟ้มที่พึ่งแยก และเปิดไฟล์ camera-webserver-for-esp32S3.ino เปลี่ยนชื่อกับรหัส WIFI ในบรรทัด 24 กับ 25 ให้ใช้อันเดียวกับที่คอมพิวเตอร์เรา  </strong>
+<strong> 1. เปิดแฟ้มที่พึ่งแยก และเปิดไฟล์ camera-webserver-for-esp32S3.ino เปลี่ยนชื่อกับรหัส WIFI ในบรรทัด 24 กับ 25 ให้ใช้อันเดียวกับที่คอมพิวเตอร์เรา  </strong>
 <br /><br />
 ![alt text](/camera-webserver-for-esp32S3/Images_for_readme/ssidPassword.PNG)
 <br /><br /><br /><br />
-<strong> 3. กดไปที่ tools ตรงตัวเลือกด้านบนและเปลี่ยน Board เป็น "ESP32S3 Dev Module" และเปลี่ยน PSRAM เป็น "OPI PSRAM"  </strong>
+<strong> 2. กดไปที่ tools ตรงตัวเลือกด้านบนและเปลี่ยน Board เป็น "ESP32S3 Dev Module" และเปลี่ยน PSRAM เป็น "OPI PSRAM"  </strong>
 <br /><br />
 ![alt text](/camera-webserver-for-esp32S3/Images_for_readme/IDE_configure.PNG)
 <br /><br /><br /><br />
-<strong> 4. อัพโหลดโค้ดขึ้นบน ESP32-S3 เสร็จแล้วให้คัดลอก ip address  </strong>
+<strong> 3. อัพโหลดโค้ดขึ้นบน ESP32-S3 เสร็จแล้วให้คัดลอก ip address  </strong>
 <br /><br />
 ![alt text](/camera-webserver-for-esp32S3/Images_for_readme/ip_IDE.PNG)
 <br /><br /><br /><br />
-<strong> 5. เปิด index.html และนำ ip address ที่คัดลอกมาวางใว้ในกล่องและกด ok </strong>
+<strong> 4. เปิด index.html และนำ ip address ที่คัดลอกมาวางใว้ในกล่องและกด ok </strong>
 <br /><br />
 ![alt text](/camera-webserver-for-esp32S3/Images_for_readme/ip_prompt.PNG)
 <br /><br /><br /><br />
-<strong> 6. เสร็จสิ้น  </strong>
+<strong> 5. เสร็จสิ้น  </strong>
 <br/> <br/>
 ![alt text](/camera-webserver-for-esp32S3/Images_for_readme/done.PNG)
 <br /><br /><br /><br />
