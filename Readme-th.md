@@ -16,7 +16,7 @@
   ![alt text](/Images_for_readme/create_new_project.PNG)
 <br/>
 ## การรวบรวมรูปภาพ
-  <strong> 1. การรวบรวมรูปภาพเพื่อฝึก AI ประเภทนี้ควรใช้กล้องจาก AIoT หรือ Esp32 โดยตรง เราสามารถใช้ไลบรารี่ [camera-webserver-for-esp32S3](https://github.com/San279/AIoT_Board/blob/main/camera-webserver-for-esp32S3/README-th.md) เพื่อเก็บรูปภาพจาก AIoT ไปใว้ในคอมพิวเตอร์ </strong>
+  <strong> 1. การรวบรวมรูปภาพเพื่อฝึก AI ประเภทนี้ควรใช้กล้องจาก AIoT หรือ Esp32 โดยตรง เราสามารถใช้ไลบรารี่ [camera-webserver-for-esp32S3](https://github.com/San279/AIoT_Board/blob/main/camera-webserver-for-esp32S3/README-th.md) เพื่อเก็บรูปภาพจาก AIoT บอร์ด </strong>
 <br/><br/>   
   ![alt text](/Images_for_readme/webserver.PNG)
 <br/> <br/> <br/><br/>
