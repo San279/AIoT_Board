@@ -48,8 +48,7 @@
 ![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/capture_console.PNG)
 <br /><br /> <br />
 - เมื่อเราบึนทึกรูปแล้ว เราสามารถดาวโหลดรูปถาพโดยการกดไปที่ปุ่มตรงซ้ายล้างของเว็ป<br />
-- ลบรูปที่บันทึกใว้ทั้งหมดด้วยการกดปุ่มตรงด้านขวาล่าง
-  <br />
+- ลบรูปที่บันทึกใว้ทั้งหมดด้วยการกดปุ่มตรงด้านขวาล่าง <br /> <br />
 ![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/gallery_img.PNG)
 <br /><br /> <br />
 - เปลี่ยนการตั้งค่าต่างๆ ของกล้องได้ แนะทำให้เซ็ทความอิ่มสีใว้ที่ 2 หรือ สามารถดูเพิ่มเติมได้ที่[https://heyrick.eu/blog/index.php?diary=20210418&keitai=0](https://heyrick.eu/blog/index.php?diary=20210418&keitai=0) <br />
