@@ -67,7 +67,7 @@
 - ตัวอย่างของรูปภาพพื้นหลัง <br/> <br/>
 ![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/resolution_class.PNG)
 <br/> <br/><br/> <br/>
-เมื่อเรารวบรวมรูปภาพเสร็จเรียบร้อย ให้ download รูปลงบนคอมพิวเตอร์และแตกไฟล์รูปของเราเพื่ออัพโหลดรูปขั้น Edge Impulse [ในเสต็ปที่สอง](https://github.com/San279/AIoT_Board/blob/main/Readme-th.md)
+- เมื่อเรารวบรวมรูปภาพเสร็จเรียบร้อย ให้ download รูปลงบนคอมพิวเตอร์และแตกไฟล์รูปของเราเพื่ออัพโหลดรูปขั้น Edge Impulse [ในเสต็ปที่สอง](https://github.com/San279/AIoT_Board/blob/main/Readme-th.md)
 <br /> <br /><br /> <br /><br /> <br />
 ## เครดิต
 ต้องขอขอบคุณ [WIRELESS SOLUTION ASIA CO.,LTD](https://wirelesssolution.asia/) สำหรับการสนับสนุนโปรเจ็คนี้ และ [RandomNerdTutorials]([RandomNerdTutorial](https://RandomNerdTutorials.com/esp32-cam-video-streaming-web-server-camera-home-assistant) สำหรับโค้ดส่วนสตรีมรูปภาพขึ้นบนเว็ปเซอร์เวอร์
