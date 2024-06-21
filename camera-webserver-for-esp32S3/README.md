@@ -17,28 +17,23 @@ This project is dedicated for collecting images from Esp32S3 to train [FOMO obje
 4. styles.css - makes webserver looks more lively.
 
 ## How to Install and run the project
-
-<strong> 1. Download the project and unzip it to your Arduino Directory. </strong>
-<br /><br />
-![alt text](/camera-webserver-for-esp32S3/Images_for_readme/folder_directory.PNG)
-<br /><br /><br /><br />
-<strong> 2. Open camera-webserver-for-esp32S3 directory and launch camera-webserver-for-esp32S3.ino. Enter WIFI SSID and PASSWORD.  </strong>
+<strong> 1. Open camera-webserver-for-esp32S3 directory and launch camera-webserver-for-esp32S3.ino. Enter WIFI SSID and PASSWORD.  </strong>
 <br /><br />
 ![alt text](/camera-webserver-for-esp32S3/Images_for_readme/ssidPassword.PNG)
 <br /><br /><br /><br />
-<strong> 3. Under tools change your Board to "ESP32S3 Dev Module" and PSRAM to "OPI PSRAM".  </strong>
+<strong> 2. Under tools change your Board to "ESP32S3 Dev Module" and PSRAM to "OPI PSRAM".  </strong>
 <br /><br />
 ![alt text](/camera-webserver-for-esp32S3/Images_for_readme/IDE_configure.PNG)
 <br /><br /><br /><br />
-<strong> 4. Upload the code to your ESP32S3 and copy the IP address.  </strong>
+<strong> 3. Upload the code to your ESP32S3 and copy the IP address.  </strong>
 <br /><br />
 ![alt text](/camera-webserver-for-esp32S3/Images_for_readme/ip_IDE.PNG)
 <br /><br /><br /><br />
-<strong> 5. Open index.html file, and paste the IP Address obtained from previously.  </strong>
+<strong> 4. Open index.html file, and paste the IP Address obtained from previously.  </strong>
 <br /><br />
 ![alt text](/camera-webserver-for-esp32S3/Images_for_readme/ip_prompt.PNG)
 <br /><br /><br /><br />
-<strong> 6. Done!!!  </strong>
+<strong> 5. Done!!!  </strong>
 <br/> <br/>
 <strong> - I've created repository to provide simple guide to training FOMO object detection model please visit [train-FOMO-object-detect-esp32](https://github.com/San279/train-FOMO-object-detect-esp32). </strong>
 <br/> <br/>
