@@ -104,7 +104,7 @@
    <br/> <br/><br/>
   <strong> 3. กด Build เพื่อโหลดโมเดล เป็น zip และไป import บน Arduino เรามีอยู่สอง library ให้เลือกในการนำโมเดลเราไปใช้ในกล่อง AIoT  </strong>
 - [FOMO-object-detect-stream-Esp32](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-stream-Esp32/Readme-th.md) สำหรับการ Stream โมเดลเราขึ้นเว็ปเซอร์เวอร์ 
-- [FOMO-object-detect-TFT](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-TFT-Esp32/README-th.md) สำหรับการแสดงผลของโมเดลเราบนจอ TFT ในกล่อง AIoT โดยวิธีนี่จะ setup ง่ายกว่า
+- [FOMO-object-detect-TFT](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-TFT-Esp32/README-th.md) สำหรับการแสดงผลของโมเดลเราบนจอ TFT บน AIoT บอร์ด โดยวิธีนี่จะ setup ง่ายกว่า
  <br/><br/><br/><br/><br/>
 ## Credit
 ต้องขอขอบคุณ [WIRELESS SOLUTION ASIA CO.,LTD](https://wirelesssolution.asia/) สำหรับ AIOT board และ support ในโปรเจ็คนี่ และ [Bodmer / TFT_eSPI](https://github.com/Bodmer/TFT_eSPI/blob/master/README.md) สำหรับ library จอ TFT และสกริปสำหรับการรัน FOMO จาก [Edge Impulse](https://edge-impulse.gitbook.io/docs/edge-impulse-studio/learning-blocks/object-detection/fomo-object-detection-for-constrained-devices) 
