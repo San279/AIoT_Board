@@ -56,16 +56,16 @@
 # การรวบรวมรูปภาพสำหรับฝึก AI
   - เราควรกำหนดให้มีอย่างน้อย 60 รูปต่อวัตถุ(class) และอีก 20% เป็นรูปของพื้นหลังยกตัวอย่างเช่น การฝึกโมเดลให้นับนิ้วมือนั้นเราจะกำหนด 2 class คือหนึ่งนิ้วกับสองนิ้ว โดยนิ้วที่หนึ่งจะต้องมี 60 รูป ส่วนสองนิ้วจะต้องมีอีก 60 รูปภาพ และสุดท้ายควรมีภาพพื้นหลังหรือวัตถุอื่นๆ อีก 20 รูปภาพ โดยถ้ารวมทั้งหมดเราจะมีประมาณ 150 รูปเพื่อใช้ในการฝึก AI
   - สำหรับฝึก AI บน Edge Impulse เราแนะนำให้ตั้งมิติของรูปให้มีตวามสูงและความยาวที่เหมือนกัน เนื่องจากทางเว็ปไซค์ของ Edge Impulse จะตัดส่วนความยาวให้เท่ากับความสูง ซึ่งอาจจะตัดส่วนสำคัญต่างๆ ของรูปนั้นออกไป สำหรับโปรเจ็คนี้เราใช้รูปมิติ 96 X 96 และความอิ่มสีใว้ที่ 2 ถ้าอยากให้รูปมีความละเอียดมากขึ้นเราสามารถลองเล่นกับ มิติ อื่นๆ ได้<br/> <br/>
-![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/resolution_class.PNG)
+![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/one96_eg.PNG)
 <br/> <br/> <br/> <br/>
 - ตัวอย่างรูปของหนึ่งนื้ว เราควรมีอย่างน้อย 2 พื้นหลังที่ต่างกันและเซ็ทระยะของวัตถุนั้นๆ ให้มีความกลาหหลาย เพื่อให้ AI ตรวจจับได้ดีขึ้น <br/> <br/>
-![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/resolution_class.PNG)
+![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/one96_gal.PNG)
 <br/> <br/><br/> <br/>
 - ตัวอย่างรูปของสองนิ้ว <br/> <br/>
-![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/resolution_class.PNG)
+![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/two96_gal.PNG)
 <br/> <br/><br/> <br/>
 - ตัวอย่างของรูปภาพพื้นหลัง <br/> <br/>
-![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/resolution_class.PNG)
+![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/bg96_eg.PNG)
 <br/> <br/><br/> <br/>
 - เมื่อเรารวบรวมรูปภาพเสร็จเรียบร้อย ให้ download รูปลงบนคอมพิวเตอร์และแตกไฟล์รูปของเราเพื่ออัพโหลดรูปขั้น Edge Impulse [ในเสต็ปที่สอง](https://github.com/San279/AIoT_Board/blob/main/Readme-th.md)
 <br /> <br /><br /> <br /><br /> <br />
