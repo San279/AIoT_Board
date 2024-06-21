@@ -20,7 +20,7 @@
 <br/><br/>   
   ![alt text](/Images_for_readme/webserver.PNG)
 <br/> <br/> <br/><br/>
- <strong>2. ในช่องด้านซ้าย กดเลือก data aquisition และกดที่ upload images เพื่ออัพโหลดรูปภาพที่เราเซฟใว้บนคอมพิวเตอร์ขึ้นบน Edge Impulse</strong>
+ <strong>2. ไปที่โปรเจ็คของเราในเว็ป Edge Impulse ในช่องด้านซ้าย กดเลือก data aquisition และกดที่ upload images เพื่ออัพโหลดไฟล์รูปภาพขึ้นบน Edge Impulse</strong>
  <br/> <br/> 
  ![alt text](/Images_for_readme/add_data.PNG)
   <br/> <br/>
