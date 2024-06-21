@@ -21,11 +21,7 @@
 4. api.js - ไฟล์ Javascript สำหรับ Acess point ในส่วนของการเชื่อมผล Ai จาก Arduino กับ หน้าเว็ปไซค์ 
 5. styles.css - ทำให้เว็ปไซค์ดูสวยงสาม
 ## วิธีรันโปรเจ็ค
-<strong> 1. ดาวน์โหลดแฟ้มเป็น zip และแตกไฟล์ในแฟ้ม Arduino บนคอมพิวเตอร์ของเรา </strong>
-<br /><br />
-![alt_text](/object-detect-FOMO-stream-Esp32/Images_for_readme/folder_directory.PNG)
-<br /><br /><br /><br />
-<strong> 2. ไปที่แฟ้มแล้วลง javascript dependencies เพื่อรันไฟล์ api.js จะต้องมี NodeJS ในขั้นตอนนี้</strong> <br /><br />
+<strong> 1. ไปที่แฟ้มของโปรเจ็คนี้และลง javascript dependencies เพื่อรันไฟล์ api.js (ต้องมี [NodeJS](https://nodejs.org/en/download/package-manager/current) ในขั้นตอนนี้)</strong> <br /><br />
   - สำหรับ IDE linux หรือ Mac ให้เราเปิด terminal และไปที่ไฟล์ หลังจากนั้นให้ก็อบ command เหล่านี่ไปใว้ใน terminal <br /><br />
   ```text1
 hostname -I
@@ -45,35 +41,35 @@ node api.js
 ```
  ![alt text](/object-detect-FOMO-stream-Esp32/Images_for_readme/cmd_commands.jpg)
   <br /><br /> <br /><br /><br />
- <strong> 3. เปิดไฟล์ FOMO_object_detect_stream.ino และใส่ ssid(ชื่ออินเตอร์เน็ต)  รหัส(password) และ ipv4_address </strong> <br /><br />
+ <strong> 2. เปิดไฟล์ FOMO_object_detect_stream.ino และใส่ ssid(ชื่ออินเตอร์เน็ต)  รหัส(password) และ ipv4_address </strong> <br /><br />
 ![alt text](/object-detect-FOMO-stream-Esp32/Images_for_readme/wifi_ipv4.PNG)
 <br /><br /><br />
-  - เพื่อหา ipv4_address ให้ไปที่ cmd หรือ terminal ที่เราเปิดในขั้นตอนที่แล้วและหารหัสของเครื่องเรา <br /><br />
+  - เพื่อหา ipv4_address ให้ไปที่ cmd หรือ terminal ที่เราเปิดในขั้นตอนที่แล้วและหารหัส ipv4 ของเครื่องเรา <br /><br />
     ![alt text](/object-detect-FOMO-stream-Esp32/Images_for_readme/ipv4_addr.jpg) <br /><br />
 <br /><br /><br /><br />
-<strong> 4. ใน Arduino กดไปที่ sketch และ Add .Zip library หลังจากนั้นให้เลือกไฟล์โมเดล</strong>
+<strong> 3. ใน Arduino กดไปที่ sketch และ Add .Zip library หลังจากนั้นให้เลือกไฟล์โมเดล</strong>
 <br /><br />
 ![alt text](/object-detect-FOMO-stream-Esp32/Images_for_readme/arduino_model_zip.PNG)
 <br /><br />
 ![alt text](/object-detect-FOMO-stream-Esp32/Images_for_readme/FOMO_model_zip.PNG)
 <br /><br /><br /><br /><br />
-<strong> 5. เปลี่ยนชื่อไฟล์บรรทัดที่ 24 ให้ตรงกับชื่อโปรเจ็คใน Edge Impulse </strong> 
+<strong> 4. เปลี่ยนชื่อไฟล์บรรทัดที่ 24 ให้ตรงกับชื่อโปรเจ็คใน Edge Impulse </strong> 
 <br /><br />
 ![alt_text](/object-detect-FOMO-stream-Esp32/Images_for_readme/match_name.PNG)
 <br /><br /><br /><br /><br />
-<strong> 6. กดไปที่ tools ตรงตัวเลือกด้านบนและเปลี่ยน Board เป็น "ESP32S3 Dev Module" และเปลี่ยน PSRAM เป็น "OPI PSRAM".  </strong>
+<strong> 5. กดไปที่ tools ตรงตัวเลือกด้านบนและเปลี่ยน Board เป็น "ESP32S3 Dev Module" และเปลี่ยน PSRAM เป็น "OPI PSRAM".  </strong>
 <br /><br />
 ![alt_text](/object-detect-FOMO-stream-Esp32/Images_for_readme/IDE_configure.PNG)
 <br /><br /><br /><br /><br />
-<strong> 7. อัพโหลดโค้ดขึ้นบน ESP32-S3 ขั้นตอนนี่อาจจะใช้ 20 - 30 นาที เสร็จแล้วให้คัดลอก ip address</strong>
+<strong> 6. อัพโหลดโค้ดขึ้นบน ESP32-S3 ขั้นตอนนี่อาจจะใช้ 20 - 30 นาที เสร็จแล้วให้คัดลอก ip address</strong>
 <br/> <br/>
 ![alt text](/object-detect-FOMO-stream-Esp32/Images_for_readme/arduino_serial_monitor.PNG)
 <br /><br /><br /><br />
-<strong> 8. เปิด index.html และนำ ip address ที่คัดลอกมาวางใว้ในกล่องและกด ok</strong>
+<strong> 7. เปิด index.html และนำ ip address ที่คัดลอกมาวางใว้ในกล่องและกด ok</strong>
 <br/> <br/>
 ![alt text](/object-detect-FOMO-stream-Esp32/Images_for_readme/ip_prompt.PNG)
 <br /><br /><br /><br /><br />
-9. <strong> เสร็จสิ้น </strong>  
+<strong> 8. เสร็จสิ้น </strong>  
 ![alt text](/object-detect-FOMO-stream-Esp32/Images_for_readme/done_th.PNG)<br /><br />
 <br /><br /><br /><br /><br /><br />
 ## ฟีเจอร์ของโปรเจ็ต
