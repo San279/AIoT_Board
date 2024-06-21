@@ -37,7 +37,7 @@
 <br/> <br/>
 ![alt text](/camera-webserver-for-esp32S3/Images_for_readme/done.PNG)
 <br /><br /><br /><br />
-## วิธีใช้งานเว็ปเซอร์
+## วิธีใช้งานเว็ปเซอเวอร์
 - เมื่อกดปุ่มรูปกล้องจะเริ่มการบันทึกรูปภาพ เราสามารถเซ็ทเวลาระหว่างการบึนทึกแต่ละรูป และเซ็ทจำนวนรูปที่อยากบันทึกต่อครั้ง<br />
 ![alt_text](/camera-webserver-for-esp32S3/Images_for_readme/capture_console.PNG)
 <br /><br /> <br />
