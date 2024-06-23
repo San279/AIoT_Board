@@ -70,7 +70,6 @@ int result_size = 0;
 labels[result_size] = bb.label;
 result_size++;
 ```
-<br/>
 เรียกใช้ function change_color() หลัง for loop และเซ็ทจำนวนผลกลับเป็น 0
   ```text1
 change_color(labels, result_size);
