@@ -12,26 +12,73 @@
 <strong> 3. ใน header file เพิ่ม โค้ดส่วนนี้เข้าไปใน FOMO_object_detect_stream_Esp32 </strong> <br/><br/>
 ในโค้ดส่วนนี้เรา import libray ของ neopixel และเซ็ท I/O pin หลังจากนั้น เราสร้าง object ชื่อว่า pixels เพื่อที่จะนำไปใช้ในโค้ดของเรา
 <br/><br/>
+  ```text1
+#include <Adafruit_NeoPixel.h>
+#ifdef __AVR__
+#include <avr/power.h>  
+#endif
+#define NEO_PIN 1
+#define NUMPIXELS 3  
+Adafruit_NeoPixel pixels(NUMPIXELS, NEO_PIN, NEO_GRB + NEO_KHZ800);
+```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_header.PNG)
 <br/><br/><br/>
 <strong> 4. เพิ่ม โค้ดของ function definition เราจะตั้งชื่อมันว่า change_color </strong> <br/><br/>
+  ```text1
+void change_color(String labels[], int result_size);
+```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/functiondef_neo.png)
 <br/><br/><br/>
 <strong> 5. เพิ่มส่วน setup ของ library neoPixel ใน void_setup() เพื่อเริ่มใช้ object pixels ของเรา</strong> <br/><br/>
+  ```text1
+#if defined(__AVR_ATtiny85__) && (F_CPU == 16000000)
+  clock_prescale_set(clock_div_1);
+#endif
+  pixels.begin(); 
+```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_setup.PNG)
 <br/><br/><br/>
 <strong> 6. เพิ่ม โค้ดของ change_color ตรงส่วนไหนในไฟล์เราก้ได้ </strong> <br/> <br/>
 ในโค้ดส่วนนี้ให้เราเซ็ทค่าของ if ตามวัตถุหรือ label ที่เราใช้ฝึกโมเดลเรา โมเดลที่ใช้ในการทำ tutorial นี้มีอยู่ 3 label นั้นคือ red blue และ green ซึ่งสีของ NeoPixel จะเปิดตามผลของค่า AI เรา
 <br/> <br/>
+  ```text1
+void change_color(String labels[], int result_size) {
+  for(int i = 0; i < result_size; i++){
+    if (labels[i] == "red") {
+      pixels.setPixelColor(0, pixels.Color(255, 0, 0)); //red
+    } else if (labels[i] == "green") {
+      pixels.setPixelColor(1, pixels.Color(0, 255, 0)); //green
+    } else if (labels[i] == "blue") {
+      pixels.setPixelColor(2, pixels.Color(0, 0, 255)); //blue
+    }
+  }
+    pixels.show();
+}
+```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_function.png)
 <br/><br/><br/>
 <strong> 7. เพิ่มตัวแปรของผล AI ในช่วงบนของ static esp_err_t stream_handler(httpd_req_t *req) ก่อน while loop เราจะเก็บค่าของผล AI ใน String labels[] และจำนวนของผลใน result_size </strong> <br/> <br/>
+  ```text1
+String labels[10];
+int result_size = 0;
+```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/variables_none.png)
 <br/><br/><br/>
 <strong> 8. เพิ่ม function ของเราใน static esp_err_t stream_handler(httpd_req_t *req) ตรงส่วนหลัง for loop ของการคำนวลผล AI เพื่อเรียกใช้ function เรา</strong> <br/> <br/>
+  ```text1
+labels[result_size] = bb.label;
+result_size++;
+```
+  ```text1
+change_color(labels, result_size);
+result_size = 0;
+```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_placement.png)
 <br/><br/><br/>
-<strong> 9. เพิ่มส่วนของการเคลียสี neopixel ในส่วนท้ายของ static esp_err_t stream_handler(httpd_req_t *req) เพื่อ reset สี neopixel ในกรณีที่วัตถุนั้น ไม่อยู่ในเฟรมเราแล้ว <br/> <br/>
+<strong> 9. เพิ่มส่วนของการเคลียสี neopixel ในส่วนท้ายของ static esp_err_t stream_handler(httpd_req_t *req) ก่อน ei_sleep(1000) เพื่อ reset สี neopixel ในกรณีที่วัตถุนั้น ไม่อยู่ในเฟรมเราแล้ว <br/> <br/>
+  ```text1
+pixels.clear();
+```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_clear.png)
 <br/><br/><br/>
 
