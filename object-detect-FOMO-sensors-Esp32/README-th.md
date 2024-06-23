@@ -12,13 +12,13 @@
 <strong> 3. ใน header file เพิ่ม โค้ดส่วนนี้เข้าไปใน FOMO_object_detect_stream_Esp32 </strong> <br/><br/>
 ในโค้ดส่วนนี้เรา import libray ของ neopixel และเซ็ท I/O pin หลังจากนั้น เราสร้าง object ชื่อว่า pixels เพื่อไปใช้ในโค้ดของเรา
 <br/><br/>
-[alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_header.png)
+[alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_header.PNG)
 <br/><br/><br/>
 <strong> 4. เพิ่ม โค้ดของ function definition เราจะตั้งชื่อมันว่า change_color </strong> <br/><br/>
 [alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/functiondef_neo.png)
 <br/><br/><br/>
 <strong> 5. เพิ่มส่วน setup ของ library neoPixel ใน void_setup() เพื่อเริ่มใช้ object pixels ของเรา</strong> <br/><br/>
-[alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_setup.png)
+[alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_setup.PNG)
 <br/><br/><br/>
 <strong> 6. เพิ่ม โค้ดของ change_color ตรงส่วนไหนในไฟล์เราก้ได้ </strong> <br/> <br/>
 ในโค้ดส่วนนี้ให้เราเซ็ทค่าของ if ตามวัตถุหรือ label ที่เราใช้ฝึกโมเดลเรา โมเดลที่ใช้ในการทำ tutorial นี้มีอยู่ 3 label นั้นคือ red blue และ green ซึ่งสีของ NeoPixel จะเปิดตามผลของค่า AI เรา
