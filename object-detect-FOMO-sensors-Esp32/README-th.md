@@ -77,7 +77,7 @@ result_size = 0;
 ```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_placement.png)
 <br/><br/><br/>
-<strong> 9. เพิ่มส่วนของการเคลียสี neopixel ในส่วนท้ายของ static esp_err_t stream_handler(httpd_req_t *req) ก่อน ei_sleep(1000) เพื่อ reset สี neopixel ในกรณีที่วัตถุนั้น ไม่อยู่ในเฟรมเราแล้ว <br/> <br/>
+<strong> 9. เพิ่มส่วนของการเคลียสี neopixel ในส่วนท้ายของ static esp_err_t stream_handler(httpd_req_t *req) ก่อน ei_sleep(1000) เพื่อ reset สี neopixel ในกรณีที่วัตถุนั้นไม่อยู่ในเฟรมเราแล้ว </strong> <br/> <br/>
   ```text1
 pixels.clear();
 ```
