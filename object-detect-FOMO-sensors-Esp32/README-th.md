@@ -18,8 +18,8 @@
 <strong> 5. เพิ่มส่วน setup ของ library neoPixel ใน void_setup() </strong> <br/><br/>
 [alt-text]()
 <br/><br/><br/>
-<strong> 6. เพิ่ม โค้ดของ change_color ตรงส่วนไหนในไฟล์เราก้ได้ </strong> <br/>
-ในโค้ดส่วนนี้ให้เราเซ็ทค่าของ if ตามวัตถุหรือ label ที่เราใช้ฝึกโมเดลเรา โมเดลที่ใช้ในการทำ tutorial นั้นมี 3 label มีบล็อกสี red blue และ green ซึ่งสีของ NeoPixel จะเปิดตามผลของค่า AI เรา
+<strong> 6. เพิ่ม โค้ดของ change_color ตรงส่วนไหนในไฟล์เราก้ได้ </strong> <br/> <br/>
+ในโค้ดส่วนนี้ให้เราเซ็ทค่าของ if ตามวัตถุหรือ label ที่เราใช้ฝึกโมเดลเรา โมเดลที่ใช้ในการทำ tutorial นี้มีอยู่ 3 label นั้นคือ red blue และ green ซึ่งสีของ NeoPixel จะเปิดตามผลของค่า AI เรา
 <br/> <br/>
 [alt-text]()
 <br/><br/><br/>
