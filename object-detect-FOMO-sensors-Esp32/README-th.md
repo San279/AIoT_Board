@@ -1,6 +1,6 @@
 # การใช้ AI กับ Sensor บน AIoT บอร์ด
 ในโปรเจ็ตนี้ เราจะสอนวิธีการนำ AI ตรวจจับวัตถไปใช้คู่กับเซ็นเซอร์ต่างๆ บน AIoT บอร์ด <br/>
-<strong>เราต้องมีโมเดล [Fomo](https://github.com/San279/AIoT_Board/blob/main/Readme-th.md) และ set up ไฟล์ใน [object-detect-FOMO-steam-Esp32](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-stream-Esp32/Readme-th.md) ให้เสร็จเรียบร้อยเพื่อนำมาใช้กับเซนเซอร์ ต่างๆ ในโปรเจ็คนี้</strong>
+<strong>เราต้องมีโมเดล [Fomo](https://github.com/San279/AIoT_Board/blob/main/Readme-th.md) และรันไฟล์ใน [object-detect-FOMO-steam-Esp32](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-stream-Esp32/Readme-th.md) ให้เสร็จเรียบร้อยเพื่อนำมาใช้กับเซนเซอร์ ต่างๆ ในโปรเจ็คนี้</strong>
 <br/><br/>
 ## การใช้ AI กับ NeoPixel
 <strong> 1. ต่อ I/O 1 กับ NeoPixel บน AIoT บอร์ด </strong><br/> <br/>
@@ -19,7 +19,7 @@
 [alt-text]()
 <br/><br/><br/>
 <strong> 6. เพิ่ม โค้ดของ change_color ตรงส่วนไหนในไฟล์เราก้ได้ </strong> <br/>
-- ในโค้ดส่วนนี้ให้เราเซ็ทค่าของ if ตามวัตถุหรือ label ที่เราใช้ฝึกโมเดลเรา โมเดลที่ใช้ในการทำ tutorial นั้นมี 3 label มีบล็อกสี red blue และ green ซึ่งสีของ NeoPixel จะเปิดตามผลของค่า AI เรา
+-ในโค้ดส่วนนี้ให้เราเซ็ทค่าของ if ตามวัตถุหรือ label ที่เราใช้ฝึกโมเดลเรา โมเดลที่ใช้ในการทำ tutorial นั้นมี 3 label มีบล็อกสี red blue และ green ซึ่งสีของ NeoPixel จะเปิดตามผลของค่า AI เรา
 <br/> <br/>
 [alt-text]()
 <br/><br/><br/>
