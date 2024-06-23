@@ -39,7 +39,7 @@ void change_color(String labels[], int result_size);
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_setup.PNG)
 <br/><br/><br/>
 <strong> 6. เพิ่ม โค้ดของ change_color ตรงส่วนไหนในไฟล์เราก้ได้ </strong> <br/> <br/>
-ในโค้ดส่วนนี้ให้เราเซ็ทค่าของ if ตามวัตถุหรือ label ที่เราใช้ฝึกโมเดลเรา โมเดลที่ใช้ในการทำ tutorial นี้มีอยู่ 3 label นั้นคือ red blue และ green ซึ่งสีของ NeoPixel จะเปิดตามผลของค่า AI เรา
+ในโค้ดส่วนนี้ให้เราเซ็ทค่าของ if ตามชื่อวัตถุหรือ label ที่เราใช้ฝึกโมเดลเรา ส่วนใน tutorial นี้โมเดลของเรามีอยู่ 3 label นั้นคือ red blue และ green ซึ้งเราจะ set ค่าสีของ NeoPixel ให้มีสีตามผล label ของเรา
 <br/> <br/>
   ```text1
 void change_color(String labels[], int result_size) {
@@ -57,18 +57,21 @@ void change_color(String labels[], int result_size) {
 ```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_function.png)
 <br/><br/><br/>
-<strong> 7. เพิ่มตัวแปรของผล AI ในช่วงบนของ static esp_err_t stream_handler(httpd_req_t *req) ก่อน while loop เราจะเก็บค่าของผล AI ใน String labels[] และจำนวนของผลใน result_size </strong> <br/> <br/>
+<strong> 7. เพิ่มตัวแปรของผล AI ในช่วงบนของ static esp_err_t stream_handler(httpd_req_t *req) ก่อน while loop เราจะเก็บผลของ AI ใน String labels[] และจำนวนของผลใน result_size </strong> <br/> <br/>
   ```text1
 String labels[10];
 int result_size = 0;
 ```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/variables_none.png)
 <br/><br/><br/>
-<strong> 8. เพิ่ม function ของเราใน static esp_err_t stream_handler(httpd_req_t *req) ตรงส่วนหลัง for loop ของการคำนวลผล AI เพื่อเรียกใช้ function เรา</strong> <br/> <br/>
+<strong> 8. เพิ่ม function ของเราใน static esp_err_t stream_handler(httpd_req_t *req) ตรงในส่วน for loop และหลัง เพื่อเก็บผล AI และนำไปใช้ใน function change_color() </strong> <br/> <br/>
+ส่วนที่เพิ่มใน for loop เก็บผลของ AI ใว้ในตัวแปร
   ```text1
 labels[result_size] = bb.label;
 result_size++;
 ```
+<br/>
+เรียกใช้ function change_color() หลัง for loop และเซ็ทจำนวนผลกลับเป็น 0
   ```text1
 change_color(labels, result_size);
 result_size = 0;
