@@ -10,7 +10,7 @@
 ![alt-text]()
 <br/><br/><br/>
 <strong> 3. ใน header file เพิ่ม โค้ดส่วนนี้เข้าไปใน FOMO_object_detect_stream_Esp32 </strong> <br/><br/>
-ในโค้ดส่วนนี้เรา import libray ของ neopixel และเซ็ท I/O pin หลังจากนั้น เราสร้าง object ชื่อว่า pixels เพื่อไปใช้ในโค้ดของเรา
+ในโค้ดส่วนนี้เรา import libray ของ neopixel และเซ็ท I/O pin หลังจากนั้น เราสร้าง object ชื่อว่า pixels เพื่อที่จะนำไปใช้ในโค้ดของเรา
 <br/><br/>
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_header.PNG)
 <br/><br/><br/>
