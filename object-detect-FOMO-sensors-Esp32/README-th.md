@@ -175,7 +175,7 @@ duty_cycle ตัวแปรของค่า pwm <br/>
 #define LEDC_CHANNEL 1
 #define LEDC_RESOLUTION 200
 #define RESOLUTION_BITS 8
-#define SERVO_PIN 12
+#define SERVO_PIN 2
 int duty_cycle = 0;
 ```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/servo_pins.PNG)
