@@ -85,7 +85,7 @@ pixels.clear();
 <br/><br/><br/><br/><br/>
 
 ## การคุมความสว่าง LED ด้วย AI
-<strong> 1. ต่อ I/O 2 กับ LED บน AIoT บอร์ด </strong><br/> <br/>
+<strong> 1. ต่อ I/O 2 กับ LED บน AIoT บอร์ด และเปิดของส่วน FOMO_object_detect_stream_Esp32.ino เพื่อเพิ่มโค้ดเหล่านี้เข้าไปในไฟล์</strong><br/> <br/>
 ![alt-text]()
 <br/><br/><br/><br/>
 <strong> 2. เนื่องจากเราจะใช้ Pwm เพื่อคุมความสว่าง LED เราประกาศตัวแปรเพื่อใช้ใน ledc ในเสต็ปที่ 4 </strong>
@@ -161,7 +161,7 @@ result_size = 0;
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/led_placement.png)
 <br/><br/><br/><br/><br/>
 ## การควบคุม Servo-motor ด้วย AI
-<strong> 1. ต่อ I/O 12 กับ Servo-motor บน AIoT บอร์ด </strong><br/> <br/>
+<strong> 1. ต่อ I/O 2 กับ Servo-motor บน AIoT บอร์ด และเปิดของส่วน FOMO_object_detect_stream_Esp32.ino เพื่อเพิ่มโค้ดเหล่านี้เข้าไปในไฟล์</strong><br/> <br/>
 ![alt-text]()
 <br/><br/><br/><br/>
 <strong> 2. เนื่องจากเราใช้ Pwm เหมือนกันกับการคุม Servo เราประกาศตัวแปรคล้ายกันกับ LED เพื่อใช้ใน ledc ในเสต็ปที่ 4 </strong>
