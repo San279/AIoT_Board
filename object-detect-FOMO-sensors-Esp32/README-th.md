@@ -39,7 +39,7 @@ void change_color(String labels[], int result_size);
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_setup.PNG)
 <br/><br/><br/><br/>
 <strong> 6. เพิ่ม โค้ดของ change_color ตรงส่วนไหนในไฟล์เราก้ได้ </strong> <br/> <br/>
-ในโค้ดส่วนนี้ให้เราเซ็ทค่าของ if ตามชื่อวัตถุหรือ label ที่เราใช้ฝึกโมเดลเรา ส่วนใน tutorial นี้โมเดลของเรามีอยู่ 3 label นั้นคือ red blue และ green ซึ้งเราจะ set ค่าสีของ NeoPixel ให้มีสีตามผล label ของเรา
+ในโค้ดส่วนนี้ให้เราเซ็ทค่าของ if ตามชื่อวัตถุหรือ label ที่เราใช้ฝึกโมเดลเรา ส่วนใน tutorial นี้โมเดลของเรามีอยู่ 3 label นั้นคือ red blue และ green ซึ่งเราจะ set ค่าสีของ NeoPixel ให้มีสีตามผล label ของเรา
 <br/>
   ```text1
 void change_color(String labels[], int result_size) {
@@ -117,7 +117,7 @@ ledcAttachPin(LED_PIN, LEDC_CHANNEL);
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/led_setup.png)
 <br/><br/><br/><br/>
 <strong> 5. เพิ่ม โค้ดของ function change_led_brightness ตรงส่วนไหนในไฟล์เราก้ได้ </strong> <br/> <br/>
-ในโค้ดส่วนนี้ให้เราเซ็ทค่าของ if ตามชื่อวัตถุหรือ label ที่เราใช้ฝึกโมเดลเรา ส่วนใน tutorial นี้โมเดลของเรามีอยู่ 2 label นั้นคือ + กับ - ซึ้งเราจะเปลี่ยนความสว่างของ LED ตามสัญลักษณ์มือเรา
+ในโค้ดส่วนนี้ให้เราเซ็ทค่าของ if ตามชื่อวัตถุหรือ label ที่เราใช้ฝึกโมเดลเรา ส่วนใน tutorial นี้โมเดลของเรามีอยู่ 2 label นั้นคือ + กับ - ซึ่งเราจะเปลี่ยนความสว่างของ LED ตามสัญลักษณ์มือเรา
 <br/>
   ```text1
 void change_led_brightness(String labels[], int result_size) {
@@ -154,7 +154,7 @@ result_size++;
 ```
 เรียกใช้ function change_led_brightness() หลัง for loop และเซ็ทจำนวนผลกลับเป็น 0
   ```text1
-change_color(labels, result_size);
+change_led_brightness(labels, result_size);
 result_size = 0;
 ```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/led_placement.png)
