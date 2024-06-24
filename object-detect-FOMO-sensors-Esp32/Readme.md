@@ -2,7 +2,7 @@
 [ภาษาไทย](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-sensors-Esp32/README-th.md)
 <br/><br/>
 This project will be exploring ways to automate object detection model with basic sensors such as NeoPixel, LED, and Servo motor. <br/>
-<strong>This project requires [Fomo](https://github.com/San279/AIoT_Board/blob/main/Readme-th.md) model and succesfully run Arduino project from [object-detect-FOMO-steam-Esp32](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-stream-Esp32/Readme-th.md) 
+<strong>This project requires [Fomo](https://github.com/San279/AIoT_Board/blob/main/Readme-th.md) model and succesfully run the Arduino project from [object-detect-FOMO-steam-Esp32](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-stream-Esp32/Readme-th.md) 
 since we will be editing the Arduino Files with these code snippets for experimenting and understanding.</strong>
 <br/><br/>
 ## Change NeoPixel colors with FOMO
