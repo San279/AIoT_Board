@@ -70,7 +70,7 @@ node api.js
 ![alt text](/object-detect-FOMO-stream-Esp32/Images_for_readme/ip_prompt.PNG)
 <br /><br /><br /><br /><br />
 <strong> 8. เสร็จสิ้น </strong>
-- เมื่อเราทำการเทสโมเดลเราเสร็จเรียบร้อยแล้ว เราสามารถนำไปใช้กับ Sensor ต่างๆ ด้วย Guide [นี้](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-sensors-Esp32/README-th.md)
+- เมื่อเราทำการเทสโมเดลเราเสร็จเรียบร้อยแล้ว เราสามารถนำไปใช้กับ Sensor ต่างๆ ด้วย Guide [ส่วนนี้](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-sensors-Esp32/README-th.md)
 <br /><br />
 ![alt text](/object-detect-FOMO-stream-Esp32/Images_for_readme/done_th.PNG)
 <br /><br /><br /><br /><br /><br />
