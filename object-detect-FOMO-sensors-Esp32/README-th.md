@@ -64,7 +64,7 @@ int result_size = 0;
 ```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/variables_none.png)
 <br/><br/><br/><br/>
-<strong> 8. เก็บผลของ AI ใน static esp_err_t stream_handler(httpd_req_t *req) ตรงในส่วน for loop เพื่อเก็บผล AI และนำไปใช้ใน function change_color() หลัง for loop</strong> <br/> <br/>
+<strong> 8. เก็บผลของ AI ใน static esp_err_t stream_handler(httpd_req_t *req) ตรงในส่วน for loop และนำไปใช้ใน function change_color() หลัง for loop</strong> <br/> <br/>
 ส่วนที่เพิ่มใน for loop เพื่อเก็บผลและจำนวนของผล AI ใว้ในตัวแปร
   ```text1
 labels[result_size] = bb.label;
@@ -140,7 +140,7 @@ void change_led_brightness(String labels[], int result_size) {
 ```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/led_function.png)
 <br/><br/><br/><br/>
-<strong> 6. เพิ่มตัวแปรเพื่อเก็บผล AI ในช่วงบนของ static esp_err_t stream_handler(httpd_req_t *req) ก่อน while loop เราจะเก็บผลของ AI ใน String labels[] และจำนวนของผลใน result_size </strong> <br/> <br/>
+<strong> 6. เพิ่มตัวแปรเพื่อเก็บผล AI ในช่วงบนของ static esp_err_t stream_handler(httpd_req_t *req) </strong> <br/> <br/>
   ```text1
 String labels[10];
 int result_size = 0;
@@ -148,7 +148,7 @@ int result_size = 0;
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/variables_none.png)
 <br/><br/><br/><br/>
 <strong> 7. เก็บผลของ AI ใน static esp_err_t stream_handler(httpd_req_t *req) ตรงในส่วน for loop เพื่อเก็บผล AI และนำไปใช้ใน function change_led_brightness() หลัง for loop</strong> <br/> <br/>
-ส่วนที่เพิ่มใน for loop เพื่อเก็บผลและจำนวนของผล AI ใว้ในตัวแปร
+ส่วนที่เพิ่มใน for loop เพื่อเก็บผลและจำนวนของผล AI
   ```text1
 labels[result_size] = bb.label;
 result_size++;
@@ -232,7 +232,7 @@ void change_servo(String labels[], float confidence[], int result_size){
 ```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/servo_function.png)
 <br/><br/><br/><br/>
-<strong> 6. เพิ่มตัวแปรเพื่อเก็บผล AI ในช่วงบนของ static esp_err_t stream_handler(httpd_req_t *req) ก่อน while loop เราจะเก็บผลของ AI ใน String labels[] ระดับความมั่นใจใน confidence และจำนวนของผลใน result_size </strong> <br/> <br/>
+<strong> 6. เพิ่มตัวแปรเพื่อเก็บผล AI ในช่วงบนของ static esp_err_t stream_handler(httpd_req_t *req) </strong> <br/> <br/>
   ```text1
 String labels[10];
 confidence[10];
@@ -240,8 +240,8 @@ int result_size = 0;
 ```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/variable_con.png)
 <br/><br/><br/><br/>
-<strong> 7. เก็บผลของ AI ใน static esp_err_t stream_handler(httpd_req_t *req) ตรงในส่วน for loop เพื่อเก็บผล AI และนำไปใช้ใน function change_servo() หลัง for loop</strong> <br/> <br/>
-ส่วนที่เพิ่มใน for loop เพื่อเก็บผลและจำนวนของผล AI ใว้ในตัวแปร
+<strong> 7. เพิ่ทโค้ดส่วนนี้เพื่อเก็บผลของ AI ใน static esp_err_t stream_handler(httpd_req_t *req) ตรงในส่วน for loop และนำไปใช้ใน function change_servo() หลัง for loop</strong> <br/> <br/>
+ส่วนที่เพิ่มใน for loop เพื่อเก็บผลและจำนวนของผล AI
   ```text1
 labels[result_size] = bb.label;
 confidence[result_size] = bb.value;
