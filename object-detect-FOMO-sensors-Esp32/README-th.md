@@ -90,7 +90,7 @@ pixels.clear();
 <br/><br/><br/><br/>
 <strong> 2. เนื่องจากเราจะใช้ Pwm เพื่อคุมความสว่าง LED เราประกาศตัวแปรเพื่อใช้ใน ledc ในเสต็ปที่ 4 </strong>
 <br/><br/>
-LEDC_CHANNEL ตัวแปรของ channel ของ pwm ใน channel 1 เราสามารถใช้ได้กับ I/O 2 และ 12 ถ้าอยากเปลี่ยน channel อ่านต่อเพิ่มเติ่มได้ที่ [luisllamas](https://www.luisllamas.es/en/esp32-s3-hardware-details-pinout/) <br/>
+LEDC_CHANNEL ตัวแปรของ channel ของ pwm ใน channel 1 เราสามารถใช้ได้กับ I/O 2 ถ้าอยากเปลี่ยน channel อ่านต่อเพิ่มเติ่มได้ที่ [luisllamas](https://www.luisllamas.es/en/esp32-s3-hardware-details-pinout/) <br/>
 LEDC_RESOLUTION จำนวน hertz <br/>
 RESOLUTION_BITS จำนวน bits ของ pwm ถ้าเราเซ็ทมันใว้ที่ 8 เราปรับค่า pwm ได้สูงสุด 256 โดยวิธีคำนวนคือ 2^(bits) <br/>
 LED_PIN I/O ของ Pin ที่เราใช้ <br/>
@@ -166,7 +166,7 @@ result_size = 0;
 <br/><br/><br/><br/>
 <strong> 2. เนื่องจากเราใช้ Pwm เหมือนกันกับการคุม Servo เราประกาศตัวแปรคล้ายกันกับ LED เพื่อใช้ใน ledc ในเสต็ปที่ 4 </strong>
 <br/><br/>
-LEDC_CHANNEL ตัวแปรของ channel ของ pwm ใน channel 1 เราสามารถใช้ได้กับ I/O 2 และ 12 ถ้าอยากเปลี่ยน channel อ่านต่อเพิ่มเติ่มได้ที่ [luisllamas](https://www.luisllamas.es/en/esp32-s3-hardware-details-pinout/) <br/>
+LEDC_CHANNEL ตัวแปรของ channel ของ pwm ใน channel 1 เราสามารถใช้ได้กับ I/O 2 ถ้าอยากเปลี่ยน channel อ่านต่อเพิ่มเติ่มได้ที่ [luisllamas](https://www.luisllamas.es/en/esp32-s3-hardware-details-pinout/) <br/>
 LEDC_RESOLUTION จำนวน hertz <br/>
 RESOLUTION_BITS จำนวน bits ของ pwm ถ้าเราเซ็ทมันใว้ที่ 8 <br/>
 SERVO_PIN I/O ของ Pin ที่เราใช้ <br/>
@@ -238,7 +238,7 @@ String labels[10];
 confidence[10];
 int result_size = 0;
 ```
-![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/variables_con.png)
+![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/variable_con.png)
 <br/><br/><br/><br/>
 <strong> 7. เก็บผลของ AI ใน static esp_err_t stream_handler(httpd_req_t *req) ตรงในส่วน for loop เพื่อเก็บผล AI และนำไปใช้ใน function change_servo() หลัง for loop</strong> <br/> <br/>
 ส่วนที่เพิ่มใน for loop เพื่อเก็บผลและจำนวนของผล AI ใว้ในตัวแปร
