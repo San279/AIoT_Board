@@ -55,7 +55,8 @@ This project was intended for streaming [FOMO object detection model](https://ed
 6. <strong> Go to directory and open index.html, it should open the default browser and ask for IP Addres. Paste the Ip address obtain from Arduino IDE in process 7. </strong> <br /><br />
 ![alt text](/object-detect-FOMO-stream-Esp32/Images_for_readme/ip_prompt.PNG)
 <br /><br /><br /><br />
-7. <strong> Done!! the inference results from Esp32 should be shown in the webserver. </strong>  
+7. <strong> Done!! the inference results from Esp32 should be shown in the webserver. </strong>
+- Once you succesfully run the project, you can integrate your FOMO model with Sensors in this [brief-guide](https://github.com/San279/AIoT_Board/tree/main/object-detect-FOMO-sensors-Esp32). 
 ![alt text](/object-detect-FOMO-stream-Esp32/Images_for_readme/done.PNG)<br /><br />
 <br /><br /><br /><br />
 ## Webserver features
