@@ -109,7 +109,7 @@ void change_led_brightness(String labels[], int result_size);
 ```
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/functiondef_led.png)
 <br/><br/><br/><br/>
-<strong> 4. นำตัวแปรในเสต็ป 2 มาใช้ใน ledc ฟั้งชั้นเพื่อเริ่ม channel ของ pwm และ เซ็ท I/O ใน void_setup() </strong>
+<strong> 4. นำตัวแปรในเสต็ป 2 มาใช้ใน ledc function เพื่อเริ่ม channel ของ pwm และ เซ็ท I/O ใน void_setup() </strong>
   ```text1
 ledcSetup(LEDC_CHANNEL, LEDC_RESOLUTION, RESOLUTION_BITS);
 ledcAttachPin(LED_PIN, LEDC_CHANNEL);
