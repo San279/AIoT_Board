@@ -84,7 +84,7 @@ pixels.clear();
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_clear.png)
 <br/><br/><br/><br/><br/>
 
-## การใช้ AI กับ LED
+## การใช้ AI กับ PWM ใน LED
 <strong> 1. ต่อ I/O 2 กับ LED บน AIoT บอร์ด </strong><br/> <br/>
 ![alt-text]()
 <br/><br/><br/><br/>
