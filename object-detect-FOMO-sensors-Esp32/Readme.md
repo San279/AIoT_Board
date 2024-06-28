@@ -6,8 +6,8 @@ This project will be exploring ways to automate object detection model with basi
 since we will be editing the Arduino Files with these code snippets for experimenting and understanding.</strong>
 <br/><br/>
 ## Change NeoPixel colors with FOMO
-<strong> 1. Connect I/O 1 of the Esp32 or AIot board with NeoPixel.</strong><br/> <br/>
-<br/><br/><br/><br/>
+<strong> 1. Connect I/O 1 of the Esp32 or AIot board with NeoPixel.</strong>
+<br/> <br/><br/>
 <strong> 2.  Open "FOMO_object_detect_stream_Esp32.ino" located inside "object-detect-FOMO-stream-Esp32" and add .Zip Adafruit NeoPixel library from this local directory "FOMO_object_detect_stream_neopixel" to Arduino IDE.</strong> <br /><br />
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_di.PNG)
 <br/><br/><br/><br/>
@@ -86,9 +86,8 @@ pixels.clear();
 <br/><br/><br/><br/><br/>
 
 ## Change LED brightness with FOMO
-<strong> 1. connect I/O Pin 2 of Esp32 or AIoT Board to LED and open FOMO_object_detect_stream_Esp32.ino to add these snippets</strong><br/> <br/>
-![alt-text]()
-<br/><br/><br/><br/>
+<strong> 1. connect I/O Pin 2 of Esp32 or AIoT Board to LED and open FOMO_object_detect_stream_Esp32.ino to add these snippets</strong>
+<br/> <br/><br/>
 <strong> 2. Since we will be using PWM signal to control LED brightness, LEDC library will be used</strong>
 <br/><br/>
 LEDC_CHANNEL - PWM channel no.1 so we can use with I/O Pin 2, if you want to change the PWM channel read more at [luisllamas](https://www.luisllamas.es/en/esp32-s3-hardware-details-pinout/) <br/>
@@ -162,9 +161,8 @@ result_size = 0;
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/led_placement.png)
 <br/><br/><br/><br/><br/>
 ## Control Servo-motor with FOMO
-<strong> 1. Connect I/O Pin 2 of the Esp32 to Servo-motor and open FOMO_object_detect_stream_Esp32.ino to add these code snippets, don't forget to comment out the previous codes.</strong><br/> <br/>
-![alt-text]()
-<br/><br/><br/><br/>
+<strong> 1. Connect I/O Pin 2 of the Esp32 to Servo-motor and open FOMO_object_detect_stream_Esp32.ino to add these code snippets, don't forget to comment out the previous codes.</strong>
+<br/><br/><br/>
 <strong> 2. Since we will be using PWM signal to control Servo as well, we will use the same function.</strong>
   ```text1
 #define LEDC_CHANNEL 1
