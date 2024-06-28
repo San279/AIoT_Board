@@ -7,10 +7,9 @@ since we will be editing the Arduino Files with these code snippets for experime
 <br/><br/>
 ## Change NeoPixel colors with FOMO
 <strong> 1. Connect I/O 1 of the Esp32 or AIot board with NeoPixel.</strong><br/> <br/>
-![alt-text]()
 <br/><br/><br/><br/>
 <strong> 2.  Open "FOMO_object_detect_stream_Esp32.ino" located inside "object-detect-FOMO-stream-Esp32" and add .Zip Adafruit NeoPixel library from this local directory "FOMO_object_detect_stream_neopixel" to Arduino IDE.</strong> <br /><br />
-![alt-text]()
+![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_di.PNG)
 <br/><br/><br/><br/>
 <strong> 3. Add these header files to the folder to import the zip library and instanstiate an object to use with NeoPixel.</strong>
   ```text1
