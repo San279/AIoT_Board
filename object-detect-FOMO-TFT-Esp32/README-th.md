@@ -12,24 +12,24 @@
  - กล้อง OV 2640
  - ST7789 หรือ จอ TFT แบบไหนก้ได้
  - [Arduino IDE](https://www.arduino.cc/en/software) อันเก่าหรือใหม่ก้ได้
- - ใน AIot บอร์ดต่อ I/O pin 1 กับ push Button อันไหนก้ได้ <br/> <br/>
-  ![alt text](/object-detect-FOMO-TFT-Esp32/Images_for_readme/AIOT_push_button.jpg)
 ## โครงสร้าง
- - FOMO_object_detect_TFT_ino - มีไฟล์ Arduino เพื่อแสดงผล AI ขึ้นบนหน้าจอ TFT
+ - FOMO_object_detect_TFT_ino - ไฟล์ Arduino เพื่อแสดงผล AI ขึ้นบนหน้าจอ TFT
 ## วิธีรันโปรเจ็ค
-<strong> 1. เปิดไฟล์ FOMO_object_detect_TFT. บน Arduino และกดไปที่ sketch และ Add .Zip library หลังจากนั้นให้เลือกไฟล์โมเดล </strong>
+<strong> 1. ใน AIot บอร์ดต่อ I/O pin 1 กับ push Button อันไหนก้ได้ </strong>
+<br/><br/>
+<strong> 2. เปิดไฟล์ FOMO_object_detect_TFT. บน Arduino และกดไปที่ sketch และ Add .Zip library หลังจากนั้นให้เลือกไฟล์โมเดล </strong>
 <br /><br />
 ![alt_text](/object-detect-FOMO-TFT-Esp32/Images_for_readme/arduino_model_zip.PNG)
 <br /><br /><br /><br />
-<strong> 2. เปลี่ยนชื่อไฟล์บรรทัดที่ 24 ให้ตรงกับชื่อโปรเจ็คใน Edge Impulse </strong> 
+<strong> 3. เปลี่ยนชื่อไฟล์บรรทัดที่ 24 ให้ตรงกับชื่อโปรเจ็คใน Edge Impulse </strong> 
 <br /><br />
 ![alt_text](/object-detect-FOMO-TFT-Esp32/Images_for_readme/match_name.PNG)
 <br /><br /><br /><br />
-<strong> 3. กดไปที่ tools ตรงตัวเลือกด้านบนและเปลี่ยน Board เป็น "ESP32S3 Dev Module" และเปลี่ยน PSRAM เป็น "OPI PSRAM".  </strong>
+<strong> 4. กดไปที่ tools ตรงตัวเลือกด้านบนและเปลี่ยน Board เป็น "ESP32S3 Dev Module" และเปลี่ยน PSRAM เป็น "OPI PSRAM".  </strong>
 <br /><br />
 ![alt_text](/object-detect-FOMO-TFT-Esp32/Images_for_readme/IDE_configure.PNG)
 <br /><br /><br /><br />
-<strong> 4. อัพโหลดโค้ดขึ้นบน ESP32-S3 เมื่ออัพโหลดครั้งแรกอาจจะใช้เวลาถึง 20 - 30 นาที</strong> <br/> <br/>
+<strong> 5. อัพโหลดโค้ดขึ้นบน ESP32-S3 เมื่ออัพโหลดครั้งแรกอาจจะใช้เวลาถึง 20 - 30 นาที</strong> <br/> <br/>
 ![alt_text](/object-detect-FOMO-TFT-Esp32/Images_for_readme/320_240.PNG)
 <br /><br /><br /><br />
 ## ฟีเจอร์ของโปรเจ็ค
