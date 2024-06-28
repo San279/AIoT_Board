@@ -43,7 +43,7 @@ This project was intended for displaying camera feed and inference results of [F
 ## Project features
 - User can change resolution of the camera when the push button is pressed. The avaiable resolution is as follow. <br /><br />
 - 96 X 96 <br /><br />
-![alt text](/Images_for_readme/96_96.PNG)
+![alt text](/object-detect-FOMO-TFT-Esp32/Images_for_readme/96_96.PNG)
 <br /><br /><br />
 - QQVGA 160 X 120  <br /><br />
 ![alt text](/object-detect-FOMO-TFT-Esp32/Images_for_readme/160_120.PNG)
