@@ -5,11 +5,10 @@
 <strong>เราต้องมีโมเดล [Fomo](https://github.com/San279/AIoT_Board/blob/main/Readme-th.md) และรันไฟล์ใน [object-detect-FOMO-steam-Esp32](https://github.com/San279/AIoT_Board/blob/main/object-detect-FOMO-stream-Esp32/Readme-th.md) ให้เสร็จเรียบร้อยเพื่อนำมาใช้กับเซนเซอร์ ต่างๆ ในโปรเจ็คนี้</strong>
 <br/><br/>
 ## การใช้ AI กับ NeoPixel
-<strong> 1. ต่อ I/O 1 กับ NeoPixel บน AIoT บอร์ด </strong><br/> <br/>
-![alt-text]()
-<br/><br/><br/><br/>
-<strong> 2. เปิดไฟล์ FOMO_object_detect_stream_Esp32.ino กดไปที่ sketch และ Add .Zip library หลังจากนั้นให้ไปที่แฟ้ม FOMO_object_detect_stream_neopixel และ เลือก zip ไฟล์ในแฟ้มนั้น</strong> <br /><br />
-![alt-text]()
+<strong> 1. ต่อ I/O 1 กับ NeoPixel บน AIoT บอร์ด </strong>
+<br/><br/><br/>
+<strong> 2. เปิดไฟล์ FOMO_object_detect_stream_Esp32.ino กดไปที่ sketch และ Add .Zip library หลังจากนั้นให้ไปที่แฟ้ม FOMO_object_detect_stream_neopixel และ เลือก zip ไฟล์ในแฟ้มนั้น</strong>
+![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/neopixel_di.PNG)
 <br/><br/><br/><br/>
 <strong> 3. ใน header file เพิ่ม โค้ดส่วนนี้เข้าไปใน FOMO_object_detect_stream_Esp32 </strong> <br/><br/>
 ในโค้ดส่วนนี้เรา import library ของ neopixel และเซ็ท I/O pin หลังจากนั้น เราสร้าง object ชื่อว่า pixels เพื่อที่จะนำไปใช้ในโค้ดของเรา
@@ -87,9 +86,8 @@ pixels.clear();
 <br/><br/><br/><br/><br/>
 
 ## การคุมความสว่าง LED ด้วย AI
-<strong> 1. ต่อ I/O 2 กับ LED บน AIoT บอร์ด และเปิดของส่วน FOMO_object_detect_stream_Esp32.ino เพื่อเพิ่มโค้ดเหล่านี้เข้าไปในไฟล์</strong><br/> <br/>
-![alt-text]()
-<br/><br/><br/><br/>
+<strong> 1. ต่อ I/O 2 กับ LED บน AIoT บอร์ด และเปิดของส่วน FOMO_object_detect_stream_Esp32.ino เพื่อเพิ่มโค้ดเหล่านี้เข้าไปในไฟล์</strong>
+<br/><br/><br/>
 <strong> 2. เนื่องจากเราจะใช้ Pwm เพื่อคุมความสว่าง LED เราประกาศตัวแปรเพื่อใช้ใน ledc ในเสต็ปที่ 4 </strong>
 <br/><br/>
 LEDC_CHANNEL ตัวแปรของ channel ของ pwm ใน channel 1 เราสามารถใช้ได้กับ I/O 2 ถ้าอยากเปลี่ยน channel อ่านต่อเพิ่มเติ่มได้ที่ [luisllamas](https://www.luisllamas.es/en/esp32-s3-hardware-details-pinout/) <br/>
@@ -163,9 +161,8 @@ result_size = 0;
 ![alt-text](/object-detect-FOMO-sensors-Esp32/Images_for_readme/led_placement.png)
 <br/><br/><br/><br/><br/>
 ## การควบคุม Servo-motor ด้วย AI
-<strong> 1. ต่อ I/O 2 กับ Servo-motor บน AIoT บอร์ด และเปิดของส่วน FOMO_object_detect_stream_Esp32.ino เพื่อเพิ่มโค้ดเหล่านี้เข้าไปในไฟล์</strong><br/> <br/>
-![alt-text]()
-<br/><br/><br/><br/>
+<strong> 1. ต่อ I/O 2 กับ Servo-motor บน AIoT บอร์ด และเปิดของส่วน FOMO_object_detect_stream_Esp32.ino เพื่อเพิ่มโค้ดเหล่านี้เข้าไปในไฟล์</strong>
+<br/><br/><br/>
 <strong> 2. เนื่องจากเราใช้ Pwm เหมือนกันกับการคุม Servo เราประกาศตัวแปรคล้ายกันกับ LED เพื่อใช้ใน ledc ในเสต็ปที่ 4 </strong>
 <br/><br/>
 LEDC_CHANNEL ตัวแปรของ channel ของ pwm ใน channel 1 เราสามารถใช้ได้กับ I/O 2 ถ้าอยากเปลี่ยน channel อ่านต่อเพิ่มเติ่มได้ที่ [luisllamas](https://www.luisllamas.es/en/esp32-s3-hardware-details-pinout/) <br/>
