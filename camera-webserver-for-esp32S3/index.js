@@ -1,4 +1,5 @@
 /////////////// labels and languages ////////////////////
+
 var classLabel = document.getElementById("classLabel")
 var intervalLabel = document.getElementById("intervalLabel");
 var instanceLabel = document.getElementById("instanceLabel");
